@@ -36,4 +36,8 @@ public class ProdutoService {
     public Optional<Produto> findById(int id) {
         return produtoRepository.findById(id);
     }
+
+    public List<Produto> salvarLista(List<Produto> produtos) {
+        return produtoRepository.saveAll(produtos);
+    }
 }
